@@ -30,7 +30,7 @@ const appRouter = (express, app) => {
     //     return next()
     // })
     app.use(cors()) // allow any origin
-    // control json data for webhook
+    // control json data for webhook !
     app.use((req, res, next) => {
         if (req.originalUrl === '/order/webhook') {
             return next()
